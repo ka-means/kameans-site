@@ -13,7 +13,7 @@ nav: false
     <h2>Deep-dives into what a specific model does, within complex systems, econ & politics, sci-tech, or engineering.</h2>
   </div>
 
-  {% assign models_posts = site.posts | where: "series", "models" | sort: "date" | reverse %}
+{% assign models_posts = site.posts | where: "series", "models" | sort: "date" | reverse %}
 
   <ul class="post-list">
     {% for post in models_posts %}

@@ -1,11 +1,8 @@
 cv:
   name: Katherin Molina
-  label: Independent Researcher — Complex Systems, Economics & Politics, Science & Technology, Engineering
+  headline: Independent Researcher — Complex Systems, Economics & Politics, Science & Technology, Engineering
   email: kath.kahlo@hotmail.com
   location: ""
-  image: ""
-  summary: Co-founder of LAB604, working across complex systems, economics & politics, science & technology, and engineering.
-
   social_networks:
     - network: GitHub
       username: ka-means
@@ -17,9 +14,9 @@ cv:
       - institution: "[Institution name]"
         location: "[City, Country]"
         area: "[Field of study]"
-        studyType: "[Degree]"
-        start_date: 2000
-        end_date: 2000
+        degree: "[Degree]"
+        start_date: 2000-01
+        end_date: 2000-06
         highlights:
           - "[Add education highlight]"
 
@@ -27,46 +24,40 @@ cv:
       - company: LAB604
         position: Co-founder
         location: ""
-        start_date: 2025
+        start_date: 2025-01
         end_date: present
         summary: "[Add a summary of the role and its focus areas]"
         highlights:
           - "[Add experience highlight]"
 
     Awards:
-      - title: "[Award name]"
-        awarder: "[Awarding body]"
-        date: 2026-01-01
-        summary: "[Add award summary]"
+      - "[Award name] — [Awarding body] ([year])"
 
     Publications:
-      - title: "[See the Publications page for the full, BibTeX-driven list]"
+      - title: "See the Publications page for the full, BibTeX-driven list"
         authors:
           - Katherin Molina
-        publisher: ""
-        releaseDate: 2026-01-01
+        journal: ""
+        date: 2026-01
         summary: "Publications are maintained in _bibliography/papers.bib and rendered on the Publications page; this entry is a placeholder pointer."
 
     Skills:
-      - name: "[Skill area]"
-        level: ""
-        keywords: "[comma, separated, keywords]"
+      - label: "[Skill area]"
+        details: "[comma, separated, keywords]"
 
     Languages:
-      - name: English
-        summary: "[Fluency level]"
+      - label: English
+        details: "[Fluency level]"
 
     Interests:
-      - name: "[Interest area]"
-        keywords: "complex systems, economics, politics, science, technology, engineering"
+      - label: "[Interest area]"
+        details: "complex systems, economics, politics, science, technology, engineering"
 
     Certificates:
-      - name: "[Certificate name]"
-        date: 2026-01-01
-        issuer: "[Issuer]"
+      - "[Certificate name] — [Issuer] ([year])"
 
     Projects:
-      - name: "[See the Projects page for the full list]"
+      - name: "See the Projects page for the full list"
         summary: "Engineering/research projects are maintained in _projects/ and rendered on the Projects page; this entry is a placeholder pointer."
-        start_date: 2026-01-01
-        end_date: 2026-01-01
+        start_date: 2026-01
+        end_date: 2026-01

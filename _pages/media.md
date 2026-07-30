@@ -15,7 +15,8 @@ display_categories: [complex-systems, econ-politics, sci-tech, engineering]
     <h2>{{ page.description }}</h2>
   </div>
 
-  {% if page.display_categories and page.display_categories.size > 0 %}
+{% if page.display_categories and page.display_categories.size > 0 %}
+
   <div class="tag-category-list">
     <ul class="p-0 m-0">
       {% for category in page.display_categories %}
@@ -28,7 +29,7 @@ display_categories: [complex-systems, econ-politics, sci-tech, engineering]
   </div>
   {% endif %}
 
-  {% assign media_items = site.media | sort: "date" | reverse %}
+{% assign media_items = site.media | sort: "date" | reverse %}
 
   <div class="row row-cols-1 row-cols-md-2">
     {% for item in media_items %}

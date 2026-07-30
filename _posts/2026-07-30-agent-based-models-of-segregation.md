@@ -21,7 +21,7 @@ This post is the first in the **Models** series: posts that open up a specific m
 
 ## The result
 
-Even with thresholds as low as 30–40%, the system reliably converges to highly segregated configurations. No single agent wants full segregation — each is only avoiding being a small, isolated minority in its immediate neighborhood — yet the *aggregate* outcome is far more segregated than any individual's stated preference.
+Even with thresholds as low as 30–40%, the system reliably converges to highly segregated configurations. No single agent wants full segregation — each is only avoiding being a small, isolated minority in its immediate neighborhood — yet the _aggregate_ outcome is far more segregated than any individual's stated preference.
 
 ## Why it matters
 
