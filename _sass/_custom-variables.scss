@@ -1,0 +1,177 @@
+/*******************************************************************************
+ * Ka-means brand overrides.
+ * Single override partial, loaded last by assets/css/main.scss, so upstream
+ * al-folio theme files (gem-owned) are never modified directly.
+ ******************************************************************************/
+
+// -----------------------------------------------------------------------------
+// Palette: white / near-black / yellow accent / pure black secondary accent.
+// Redeclares the theme's CSS custom properties — later declaration wins the cascade.
+// -----------------------------------------------------------------------------
+
+:root {
+  color-scheme: light;
+  --global-bg-color: #ffffff;
+  --global-code-bg-color: #f4f4f4;
+  --global-text-color: #111111;
+  --global-text-color-light: #4d4d4d;
+  --global-theme-color: #f5c400;
+  --global-hover-color: #f5c400;
+  --global-hover-text-color: #000000;
+  --global-footer-bg-color: #000000;
+  --global-footer-text-color: #ffffff;
+  --global-footer-link-color: #f5c400;
+  --global-distill-app-color: #111111;
+  --global-divider-color: rgba(0, 0, 0, 0.15);
+  --global-card-bg-color: #ffffff;
+  --global-highlight-color: #f5c400;
+}
+
+// -----------------------------------------------------------------------------
+// Typography: Inter (headings/UI), Source Serif 4 w/ Georgia fallback (long-form
+// body copy — posts, abstracts), JetBrains Mono (code).
+// -----------------------------------------------------------------------------
+
+$font-heading: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-body: "Source Serif 4", Georgia, serif;
+$font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+body {
+  font-family: $font-heading;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar,
+.nav-link,
+.dropdown-item,
+.btn,
+.card-title,
+.post-title {
+  font-family: $font-heading;
+}
+
+// Long-form reading surfaces: blog posts and publication abstracts.
+.post-content,
+.post-description,
+d-article,
+.abstract.hidden,
+.bibliography .abstract {
+  font-family: $font-body;
+}
+
+code,
+pre,
+kbd,
+samp,
+.highlight,
+.bibtex-details {
+  font-family: $font-mono;
+}
+
+// -----------------------------------------------------------------------------
+// Interaction: white <-> yellow hover/active transitions on nav links, buttons,
+// dropdown items, and topic-tag chips.
+// -----------------------------------------------------------------------------
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link,
+.dropdown-item,
+#light-toggle,
+#search-toggle {
+  transition:
+    color 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.btn {
+  transition:
+    color 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.btn-outline-primary:hover {
+  background: var(--global-theme-color);
+  color: #000000;
+  border-color: var(--global-theme-color);
+}
+
+// Topic-tag / category chips (post tags, category archive lists, project
+// categories): pill treatment with the same white <-> yellow hover flip.
+.tag-category-list li,
+.post-tags a,
+.tag,
+.category-badge {
+  display: inline-block;
+  padding: 0.2rem 0.75rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 999px;
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+  transition:
+    color 0.18s ease,
+    background-color 0.18s ease,
+    border-color 0.18s ease;
+
+  a {
+    color: inherit;
+  }
+
+  &:hover {
+    background-color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: #000000;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// Cards: yellow "offset shadow" poster treatment on hover, replacing the
+// default blurred drop-shadow.
+// -----------------------------------------------------------------------------
+
+.hoverable {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hoverable:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 6px 6px 0 0 var(--global-theme-color);
+}
+
+// -----------------------------------------------------------------------------
+// Media: responsive 16:9 iframe wrapper for video/podcast embeds.
+// (Plain CSS rather than a Tailwind utility class: the theme ships a
+// precompiled tailwind.css with no per-site rebuild step, so ad-hoc utility
+// classes added in content are never generated.)
+// -----------------------------------------------------------------------------
+
+.embed-16x9 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+// Podcast embeds (Spotify/Apple) use a fixed short height rather than 16:9.
+.embed-podcast iframe {
+  width: 100%;
+  height: 152px;
+  border: 0;
+}
