@@ -25,6 +25,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm Katherin Molina — known as **Ka-means** — an independent researcher and co-founder of [LAB604](https://github.com/KahloGroup). My work moves across complex systems, economics & politics, science & technology, and engineering, and this site is where I consolidate that work: writing, formal research, engineering projects, code, media, course notes, and executable notebooks, in one git-based, low-maintenance space.
+I study the questions that stay with me.
 
-Explore the [Blog]({{ '/blog/' | relative_url }}) for opinion and short-form writing (including the [Models]({{ '/blog/models/' | relative_url }}) series, deep-dives into specific models), [Publications]({{ '/publications/' | relative_url }}) for papers and technical reports, [Projects]({{ '/projects/' | relative_url }}) for engineering and research work, [Repositories]({{ '/repositories/' | relative_url }}) for live code, [Media]({{ '/media/' | relative_url }}) for video and podcast content, and the [Vault]({{ '/vault/' | relative_url }}) for notes, Colab notebooks, slides, and reports.
+I am drawn to complexity and to how technology connects the areas that fascinate me: engineering, the social and natural sciences, and the possibilities they open for the future. I am especially interested in what emerges when software, hardware, people and their environments interact as parts of a wider system.
+
+Right now, I am exploring how heterogeneous autonomous systems communicate, share information and coordinate without constant central control. I am also curious about the dynamics that emerge in economics, politics and social systems.
+
+My aim is to turn that curiosity into useful technology: technology that creates real value and contributes positively to society, especially in communities that have benefited least from technological progress.
+
+This site is a work in progress, where I will be sharing writing, research and projects as they develop.
