@@ -36,7 +36,13 @@ pagination:
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
         <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+          {% assign tag_posts = site.tags[tag] %}
+          <i class="fa-solid fa-hashtag fa-sm"></i>
+          {% if tag_posts and tag_posts.size > 0 %}
+            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+          {% else %}
+            <span class="tag-pending" title="No posts tagged yet">{{ tag }}</span>
+          {% endif %}
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -47,7 +53,13 @@ pagination:
       {% endif %}
       {% for category in site.display_categories %}
         <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+          {% assign category_posts = site.categories[category] %}
+          <i class="fa-solid fa-tag fa-sm"></i>
+          {% if category_posts and category_posts.size > 0 %}
+            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+          {% else %}
+            <span class="tag-pending" title="No posts in this category yet">{{ category }}</span>
+          {% endif %}
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>

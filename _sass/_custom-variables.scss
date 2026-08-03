@@ -134,6 +134,24 @@ samp,
   }
 }
 
+// Chips for a tag/category with no published content yet: same pill shape,
+// but visibly inactive (dashed border, muted text, no yellow hover invert)
+// since there's nowhere for them to link to.
+.tag-pending {
+  color: var(--global-text-color-light);
+  cursor: default;
+}
+
+.tag-category-list li:has(.tag-pending) {
+  border-style: dashed;
+
+  &:hover {
+    background-color: var(--global-bg-color);
+    border-color: var(--global-divider-color);
+    color: var(--global-text-color-light);
+  }
+}
+
 // -----------------------------------------------------------------------------
 // Cards: yellow "offset shadow" poster treatment on hover, replacing the
 // default blurred drop-shadow.

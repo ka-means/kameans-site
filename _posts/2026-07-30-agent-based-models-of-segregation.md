@@ -4,6 +4,7 @@ title: "Models: what Schelling's segregation model actually shows"
 date: 2026-07-30 09:00:00-0000
 description: A deep-dive into the agent-based model that shows how mild individual preferences can produce sharp collective segregation, and what it does and doesn't imply.
 categories: complex-systems
+tags: ["ABM", "Social Sciences"]
 series: models
 related_posts: false
 ---
