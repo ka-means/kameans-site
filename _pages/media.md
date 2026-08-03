@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /media/
-title: media
+title: Media
 description: Video/vlog entries and podcast episodes.
 nav: true
 nav_order: 5

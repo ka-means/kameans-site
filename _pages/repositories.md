@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: repositories
+title: Repositories
 description: Live-pulled public repositories from GitHub (ka-means personal account and the KahloGroup/LAB604 org), forks excluded, sorted by last updated.
 nav: true
 nav_order: 4

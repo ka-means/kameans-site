@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Independent Researcher — Complex Systems, Economics & Politics, Science & Technology, Engineering.
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /vault/
-title: vault
+title: Vault
 description: Notes, Colab notebooks, slides, and reports & concept maps.
 nav: true
 nav_order: 6

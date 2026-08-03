@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Engineering and research projects, linked to their GitHub repos.
 nav: true
