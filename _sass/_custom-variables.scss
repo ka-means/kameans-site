@@ -180,3 +180,15 @@ samp,
   height: 152px;
   border: 0;
 }
+
+// -----------------------------------------------------------------------------
+// About page hero: bigger "Ka-means" title, more breathing room before the bio.
+// -----------------------------------------------------------------------------
+
+.about-page .post-title {
+  font-size: 3.75rem;
+}
+
+.about-page .post-header {
+  margin-bottom: 2rem;
+}
