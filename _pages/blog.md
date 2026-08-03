@@ -26,7 +26,7 @@ pagination:
   <div class="header-bar">
     <h1>{{ site.blog_name }}</h1>
     <h2>{{ site.blog_description }}</h2>
-    <p><a href="{{ '/blog/models/' | relative_url }}">Models series &rarr;</a></p>
+    <p><a href="{{ '/blog/models/' | relative_url }}">Explore the Models series &rarr;</a></p>
   </div>
   {% endif %}
 

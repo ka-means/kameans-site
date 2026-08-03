@@ -125,7 +125,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Ka-means # blog_name will be displayed in your blog page
-blog_description: Opinion and short-form writing on complex systems, econ & politics, sci-tech, and engineering.
+blog_description: Short essays and working notes on complexity, technology, economics, and the patterns that emerge between them.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
